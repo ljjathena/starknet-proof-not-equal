@@ -1,0 +1,15 @@
+[package]
+name = "tintinland_starknet_learning"
+version = "0.1.0"
+edition = "2024_07"
+
+[dependencies]
+starknet = ">=2.4.0"
+
+[[target.starknet-contract]]
+sierra = true
+casm = true
+artifacts = true
+
+[lib]
+crate-type = ["cdylib"]
